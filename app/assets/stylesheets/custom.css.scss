@@ -50,3 +50,33 @@
   color: #fff;
 }
 
+.features {
+  ul {
+    margin-left: 0;
+    padding-left: 15px;
+  }
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: asset-url('meeting.jpg');
+  background-size: auto;
+  color: #000;
+  font-family: 'Helvetica Neue' !important;
+  font-stretch: expanded;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-shadow: -1px 0 #555, 0 1px #555, 1px 0 #555, 0 -1px #555;
+
+}
+
+.no-left-padding {
+  padding-left: 0 !important;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+}

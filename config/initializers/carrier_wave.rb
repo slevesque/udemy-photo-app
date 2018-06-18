@@ -3,6 +3,7 @@ require 'carrierwave/storage/file' # Add this line <<<<<
 require 'carrierwave/storage/fog' # Add this line <<<<<
 
 if Rails.env.production?
+  logger.debug('WE PASSS HERE')
   CarrierWave.configure do |config|
     config.storage = :fog # Add this line <<<<<
 

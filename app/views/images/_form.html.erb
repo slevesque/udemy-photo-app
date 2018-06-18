@@ -7,6 +7,13 @@
   });
 </script>
 
+<% if Rails.env.production? %>>
+  <h1>WE ARE IN PRODUCTION</h1>
+<% else %>
+  <h1>WE ARE IN DEV</h1>
+<% end %>
+
+
 <%= form_for @image, :html => { :multipart => true, :class => "form-horizontal image" } do |f| %>
   <% if @image.errors.any? %>
     <div id="error_expl" class="panel panel-danger">
